@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: Avenir;
   src: url('./fonts/Avenir-Book.ttf') format('truetype');
@@ -12,7 +16,6 @@ body {
 }
 
 .search-bar__input::placeholder {
-  font-family: Avenir, sans-serif;
   color: #3d4e61;
 }
 
@@ -36,9 +39,11 @@ body {
 
 .search-bar--big .search-bar__input {
   height: 70px;
+  line-height: 70px;
   padding-left: 62px;
   font-size: 16px;
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
@@ -48,6 +53,7 @@ body {
 
 .search-bar--small .search-bar__input {
   height: 42px;
+  line-height: 42px;
   padding-left: 33px;
   font-size: 14px;
 
